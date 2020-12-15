@@ -3,11 +3,13 @@ x = 0
 score = x
 
 # Question One
+print("What percent do women fill the positions of directors, writers, producers, executive producers, editors, and cinematographers in 2019-2020?")
 answer_1 = input("a)56%\nb)34%\nc)63%\nd)21%\n:")
 if answer_1.lower() == "b" or answer_1.lower() == "34%":
     print("Correct")
     x = x + 1
 else:
+    print("Incorrect, women fill 34% of film positions in 2019-2020.")
 # Each question is formulated in the same way, where there are if and else statements that are dependent on what you enter as your answer.
 
 # Question Two
@@ -35,6 +37,7 @@ if answer_4.lower() == "a" or answer_4 == "Sameuel Jackson":
     print("Correct")
     x = x + 1
 else:
+    print("Incorrect, the highest paid, black actor is Samuel Jackson")
 
 # Question Five
 print("Memories of Murder was the first foreign film to win best picture.")
@@ -43,6 +46,7 @@ if answer_5.lower() == "false" or answer_5.lower() == "f":
     print("Correct")
     x = x + 1
 else:
+    print("Incorrect, the first foreign film to win best picture was Parasite.")
 
 # Question Six
 print("What is the share of minority, best actor winners?")
@@ -91,5 +95,6 @@ else:
     print("Incorrect, 'Gandhi' was the first film from India to win an Oscar.")
 
 #Total Score
-score = float(x / 5) * 100
+score = float(x / 10) * 100
+print(x,"out of 10, that is",score, "%")
 # For the final project, I will formulate the code in the same way. I will create twenty questions, along the same lines as what I've set up above.
